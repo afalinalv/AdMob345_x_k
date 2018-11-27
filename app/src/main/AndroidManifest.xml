@@ -23,15 +23,14 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
 
-            <!--meta-data это из примера Google-Firebase GitHub
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value=".java.MainActivity" /-->
-            <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
-
     </application>
 
 </manifest>
 
+        <!--meta-data это из примера Google-Firebase GitHub
+                           android:name="android.support.PARENT_ACTIVITY"
+                           android:value=".java.MainActivity" /-->
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
 
 <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
 <!--meta-data

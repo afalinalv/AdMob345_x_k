@@ -10,9 +10,12 @@ import com.google.android.gms.ads.MobileAds
 
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        private const val TAG = "MainActivity"
+    }
 
     private lateinit var mFirebaseAnalytics: FirebaseAnalytics
-    private val TAG = "MainActivity"
+
     private lateinit var mAdView: AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,14 +33,21 @@ class MainActivity : AppCompatActivity() {
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
         //MobileAds.initialize(this, "YOUR_ADMOB_APP_ID")
         MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
-        mAdView = findViewById(R.id.adView)
-        val adRequest = AdRequest.Builder().build()
-        mAdView.loadAd(adRequest)
+        // Из AS изнутри работает
+        mAdView = findViewById(R.id.madView)
+        val madRequest = AdRequest.Builder().build()
+        mAdView.loadAd(madRequest)
 
-        val adView = AdView(this)
-        adView.adSize = AdSize.BANNER
-        adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
-// TODO: Add adView to your view hierarchy.
+
+        // Из док Ads Google - создать баннер программно не работает
+         val adView = AdView(this)
+         adView.adSize = AdSize.BANNER
+         adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+
+        //mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+        // TODO: Add adView to your view hierarchy. т.е надо добавить adView в XML
 
 
 
