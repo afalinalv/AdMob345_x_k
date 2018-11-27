@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "410089744105",
+    "firebase_url": "https://admob345xk.firebaseio.com",
+    "project_id": "admob345xk",
+    "storage_bucket": "admob345xk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410089744105:android:b06b0c4defb3a783",
+        "android_client_info": {
+          "package_name": "com.example.admob345_x_k"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410089744105-sl12v3fosvg9m100453t5mk3uc5af1n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admob345_x_k",
+            "certificate_hash": "1b6fa4c5de0b9ea509f80af881a49e4d18121bee"
+          }
+        },
+        {
+          "client_id": "410089744105-4q2lcsn7vvoi541se6kqegoo9hkrc8nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtG0c_t9T_5MBV0WC70eG_x6nOSlWLYQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410089744105-4q2lcsn7vvoi541se6kqegoo9hkrc8nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
