@@ -18,8 +18,10 @@ buildscript {
 
 allprojects {
     repositories {
+        // mavenLocal() из github
         google()
         jcenter()
+        maven { url "https://maven.google.com" }
         
     }
 }
