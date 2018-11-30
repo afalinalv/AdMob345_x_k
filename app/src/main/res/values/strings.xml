@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">AdMob345_x_k</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_ad_unit_id_0">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_ad_unit_id_1">ca-app-pub-3769175412391280~9052085715</string>
+    <string name="banner_ad_unit_id_0">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id_1">ca-app-pub-3769175412391280/2510728095</string>
+    <string name="banner_ad_unit_id_2">ca-app-pub-3769175412391280/6892826237</string>
+    <string name="Interstitial_ad_unit_id_0">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Interstitial_ad_unit_id_1">ca-app-pub-3769175412391280/9176208792</string>
+    <string name="Video_ad_unit_id_0">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="Video_ad_unit_id_1">ca-app-pub-3769175412391280/9082793736</string>
 </resources>
