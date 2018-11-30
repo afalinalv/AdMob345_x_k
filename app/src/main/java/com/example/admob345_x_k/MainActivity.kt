@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.android.gms.ads.*
+
+// Reklama
+import com.google.firebase.analytics.FirebaseAnalytics
+//import com.google.android.gms.ads.*
 import com.google.android.gms.ads.reward.RewardItem
 import com.google.android.gms.ads.reward.RewardedVideoAd
 import com.google.android.gms.ads.reward.RewardedVideoAdListener
-import com.google.firebase.analytics.FirebaseAnalytics
+
 
 import kotlinx.android.synthetic.main.activity_main.* // доступ к полям Layout
 
@@ -21,7 +25,6 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
 
     private lateinit var mFirebaseAnalytics: FirebaseAnalytics
 
-    //private lateinit var mAdView: AdView  // sugar
     private lateinit var mInterstitialAd: InterstitialAd
     private lateinit var mRewardedVideoAd: RewardedVideoAd
 
@@ -82,8 +85,7 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
         }
     }
         private fun loadRewardedVideoAd() {
-            mRewardedVideoAd.loadAd(
-                "ca-app-pub-3940256099942544/5224354917",
+            mRewardedVideoAd.loadAd( getString(R.string.Video_ad_unit_id_0),
                 AdRequest.Builder().build()
             )
 
