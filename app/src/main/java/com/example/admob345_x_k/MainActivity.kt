@@ -43,7 +43,7 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
 
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
         //MobileAds.initialize(this, "YOUR_ADMOB_APP_ID")
-        MobileAds.initialize(this, getString(R.string.app_ad_unit_id_0))    //"ca-app-pub-3769175412391280~9052085715")
+        MobileAds.initialize(this, getString(R.string.app_ad_unit_id_1))    //"ca-app-pub-3769175412391280~9052085715")
         // Баннер Из AS изнутри работает
         //mAdView = findViewById(R.id.madView)
         val madRequest = AdRequest.Builder().build()
@@ -54,7 +54,7 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
         //Баннер Из док Ads Google - создать баннер программно работает "ca-app-pub-3940256099942544/6300978111"
         val adView = AdView(this)
         adView.adSize = AdSize.BANNER
-        adView.adUnitId = getString(R.string.banner_ad_unit_id_0)     //"ca-app-pub-3769175412391280~9052085715")
+        adView.adUnitId = getString(R.string.banner_ad_unit_id_2)     //"ca-app-pub-3769175412391280~9052085715")
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
         // TODO: Add adView to your view hierarchy. т.е надо добавить adView в XML
@@ -65,7 +65,7 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
 
         // Межстраничные объявления
         mInterstitialAd = InterstitialAd(this)
-        mInterstitialAd.adUnitId = getString(R.string.Interstitial_ad_unit_id_0)
+        mInterstitialAd.adUnitId = getString(R.string.Interstitial_ad_unit_id_1)
         mInterstitialAd.loadAd(AdRequest.Builder().build())
 
         mMyButton.setOnClickListener {
@@ -85,7 +85,7 @@ import kotlinx.android.synthetic.main.activity_main.* // доступ к пол�
         }
     }
         private fun loadRewardedVideoAd() {
-            mRewardedVideoAd.loadAd( getString(R.string.Video_ad_unit_id_0),
+            mRewardedVideoAd.loadAd( getString(R.string.Video_ad_unit_id_1),
                 AdRequest.Builder().build()
             )
 
